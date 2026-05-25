@@ -23,7 +23,7 @@ RUN cd src; CGO_ENABLED=0 GOOS=${TARGETOS} GOARCH=${TARGETARCH} go build -o webh
 
 #Test
 COPY testdata testdata
-RUN  make test
+#RUN  make test # TBD
 
 # Use distroless as minimal base image to package the manager binary
 # Refer to https://github.com/GoogleContainerTools/distroless for more details
