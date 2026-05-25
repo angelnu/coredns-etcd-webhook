@@ -1,24 +1,30 @@
-# Cert-manager DNSMadeEasy webhook
+# Cert-manager CoreDNS with etcd plugin webhook
 
-This is a cert-manager webhook for the DNSMadeEasy. It is used to get Let´s encrypt certificates using DNSMadeEasy as DNS resolver.
+This is a cert-manager webhook for ab etcd used in coredns. It is used to get Let´s encrypt certificates using CoreDNS as DNS resolver.
+
+It is derived from [this etcd webhook](https://github.com/kleinpa/cert-manager-etcddns-webhook) and my [dnsmadeeasy webhook](https://github.com/angelnu/dnsmadeeasy-webhook)
 
 ## Deploying the webhook
 
-Use the [angelnu helm charts](https://github.com/angelnu/helm-charts/tree/main/charts/apps/dnsmadeeasy-webhook)
+Use the [angelnu helm charts](https://github.com/angelnu/helm-charts/tree/main/charts/apps/coredns-etcd-webhook)
 
-## Building the code
+## Building the code (local)
 
 ```bash
-docker build --build-arg -t dnsmadeeasy-webhook  dnsmadeeasy-webhook 
+make
 ```
 
 or if you want build and test the code:
 
 ```bash
-docker build --build-arg TEST_ZONE_NAME=<your domain>. -t dnsmadeeasy-webhook dnsmadeeasy-webhook 
+make test
 ```
 
-Before you can run the test suite, you need to set your `apykey.yaml`with your DNSMadeEasy API key. See [instructions](testdata/dnsmadeeasy/README.md).
+## Building the code (podman)
+
+```bash
+make podman-build
+```
 
 ## Create a new release
 
