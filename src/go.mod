@@ -6,6 +6,7 @@ toolchain go1.26.3
 
 require (
 	github.com/cert-manager/cert-manager v1.20.2
+	github.com/coredns/caddy v1.1.4-0.20250930002214-15135a999495
 	github.com/coredns/coredns v1.14.3
 	github.com/pkg/errors v0.9.1
 	github.com/sirupsen/logrus v1.9.3
@@ -58,7 +59,7 @@ require (
 	github.com/DataDog/datadog-agent/pkg/util/scrubber v0.77.0 // indirect
 	github.com/DataDog/datadog-agent/pkg/version v0.77.0 // indirect
 	github.com/DataDog/datadog-go/v5 v5.8.3 // indirect
-	github.com/DataDog/dd-trace-go/v2 v2.7.1 // indirect
+	github.com/DataDog/dd-trace-go/v2 v2.8.1 // indirect
 	github.com/DataDog/go-libddwaf/v4 v4.9.0 // indirect
 	github.com/DataDog/go-runtime-metrics-internal v0.0.4-0.20260217080614-b0f4edc38a6d // indirect
 	github.com/DataDog/go-sqllexer v0.1.13 // indirect
@@ -90,7 +91,6 @@ require (
 	github.com/cenkalti/backoff/v5 v5.0.3 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/cihub/seelog v0.0.0-20170130134532-f561c5e57575 // indirect
-	github.com/coredns/caddy v1.1.4-0.20250930002214-15135a999495 // indirect
 	github.com/coreos/go-semver v0.3.1 // indirect
 	github.com/coreos/go-systemd/v22 v22.7.0 // indirect
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
