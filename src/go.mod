@@ -5,7 +5,7 @@ go 1.26.0
 toolchain go1.26.3
 
 require (
-	github.com/cert-manager/cert-manager v1.20.2
+	github.com/cert-manager/cert-manager v1.20.3
 	github.com/coredns/caddy v1.1.4-0.20250930002214-15135a999495
 	github.com/coredns/coredns v1.14.3
 	github.com/pkg/errors v0.9.1
@@ -225,7 +225,7 @@ require (
 	golang.org/x/crypto v0.52.0 // indirect
 	golang.org/x/exp v0.0.0-20260209203927-2842357ff358 // indirect
 	golang.org/x/mod v0.35.0 // indirect
-	golang.org/x/net v0.54.0 // indirect
+	golang.org/x/net v0.55.0 // indirect
 	golang.org/x/oauth2 v0.36.0 // indirect
 	golang.org/x/sync v0.20.0 // indirect
 	golang.org/x/sys v0.45.0 // indirect
